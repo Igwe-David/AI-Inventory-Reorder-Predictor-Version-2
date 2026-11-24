@@ -84,6 +84,10 @@ pip install -r requirements.txt
 
 The app **loads** `models/best_model.joblib`; it never retrains. Retrain only when you have new data.
 
+For Streamlit Community Cloud, set the main file path to
+`inventory-reorder-predictor/app/app.py`. The repository-root `requirements.txt` makes the
+project dependencies available during deployment.
+
 ## Results from the reference run (seed 42)
 
 Test period starts 2026-04-08 (the most recent 20% of dates). Units are per 7-day forecast.
