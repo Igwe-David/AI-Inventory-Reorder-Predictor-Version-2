@@ -16,6 +16,62 @@ from src.prediction import load_model, recommend
 
 st.set_page_config(page_title="Inventory Reorder Assistant", page_icon="📦", layout="wide")
 
+st.markdown("""
+<style>
+@media (max-width: 900px) {
+    .block-container {
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    [data-testid="stHorizontalBlock"] {
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    [data-testid="stHorizontalBlock"] > [data-testid="stColumn"],
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        flex: 0 1 calc(50% - 0.5rem) !important;
+        min-width: calc(50% - 0.5rem) !important;
+    }
+
+    [data-testid="stTabs"] [role="tablist"] {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    [data-testid="stTabs"] button[role="tab"] {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .block-container {
+        padding: 1.25rem 1rem 2rem;
+    }
+
+    [data-testid="stHorizontalBlock"] > [data-testid="stColumn"],
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        flex-basis: 100% !important;
+        min-width: 100% !important;
+    }
+
+    h1 {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: clamp(1.25rem, 6vw, 2rem);
+    }
+
+    pre {
+        overflow-wrap: anywhere;
+        white-space: pre-wrap;
+    }
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 @st.cache_resource
 def get_bundle():

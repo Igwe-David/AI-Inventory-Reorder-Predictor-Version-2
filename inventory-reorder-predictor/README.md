@@ -80,7 +80,7 @@ pip install -r requirements.txt
 | 4. Train, compare, save | `python -m src.train_model` | Comparison table, selected model, "Saved model to ...best_model.joblib" |
 | 5. Demonstration | `python -m src.demo` | 7 labelled steps ending in a recommendation |
 | 6. Tests | `pytest` | "34 passed" |
-| 7. Start the app | `streamlit run app/app.py` | Browser opens at http://localhost:8501 |
+| 7. Start the app | `streamlit run app/app.py` | Browser opens at http://localhost:8501; the layout adapts to tablet and mobile widths |
 
 The app **loads** `models/best_model.joblib`; it never retrains. Retrain only when you have new data.
 
