@@ -14,7 +14,8 @@ from src import config
 from src.explain import load_global_importance
 from src.prediction import load_model, recommend
 
-st.set_page_config(page_title="Inventory Reorder Assistant", page_icon="📦", layout="wide")
+st.set_page_config(page_title="AI Inventory Reorder Prediction System VERSION 2",
+                   page_icon="📦", layout="wide")
 
 st.markdown("""
 <style>
@@ -78,7 +79,7 @@ def get_bundle():
     return load_model()      # loaded from disk once - the app never retrains
 
 
-st.title("📦 Inventory Reorder Assistant")
+st.title("AI Inventory Reorder Prediction System VERSION 2")
 st.caption("Decision-support prototype. The model was trained on SYNTHETIC data created for "
            "prototype development - treat results as guidance, not as certainty.")
 
