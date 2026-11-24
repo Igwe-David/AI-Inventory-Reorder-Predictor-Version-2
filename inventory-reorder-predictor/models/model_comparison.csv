@@ -1,0 +1,5 @@
+Model,CV_MAE,MAE,MSE,RMSE,R2,WAPE_%
+Naive baseline (last 7 days),,7.606,110.934,10.533,0.509,30.692
+Linear Regression,7.336,5.922,67.704,8.228,0.7,23.897
+Random Forest,6.488,5.957,64.593,8.037,0.714,24.036
+Gradient Boosting,6.024,5.624,59.533,7.716,0.736,22.691

@@ -1,0 +1,20 @@
+{
+  "selected_model": "Gradient Boosting",
+  "test_metrics": {
+    "MAE": 5.6236,
+    "MSE": 59.5332,
+    "RMSE": 7.7158,
+    "R2": 0.7364,
+    "WAPE_%": 22.6912
+  },
+  "baseline_test_metrics": {
+    "MAE": 7.6065,
+    "MSE": 110.9345,
+    "RMSE": 10.5325,
+    "R2": 0.5088,
+    "WAPE_%": 30.6921
+  },
+  "train_rows": 15840,
+  "test_rows": 4000,
+  "test_starts": "2026-04-08"
+}

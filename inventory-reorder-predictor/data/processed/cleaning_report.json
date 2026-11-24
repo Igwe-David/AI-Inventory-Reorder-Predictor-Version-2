@@ -1,0 +1,10 @@
+{
+  "rows_in": 20680,
+  "invalid_dates_removed": 0,
+  "duplicates_removed": 62,
+  "negative_sales_set_to_missing": 10,
+  "missing_days_added": 82,
+  "missing_sales_filled_with_median": 174,
+  "outliers_capped": 71,
+  "rows_out": 20700
+}
